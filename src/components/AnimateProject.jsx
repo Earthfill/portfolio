@@ -10,7 +10,7 @@ const AnimateProject = () => {
     slidesToScroll: 1,
     autoplay: true,
     speed: 5000,
-    autoplaySpeed: 10,
+    autoplaySpeed: 100,
     cssEase: "linear",
     responsive: [
       {

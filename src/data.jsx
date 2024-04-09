@@ -59,7 +59,7 @@ export const images = [
   },
   {
     id: nanoid(),
-    img: '../src/images/shortener.jpg'
+    img: '../src/images/luxurymart.jpg'
   },
   {
     id: nanoid(),
