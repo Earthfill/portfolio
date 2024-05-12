@@ -2,13 +2,13 @@ import { nanoid } from "nanoid";
 import { FaGithub, FaHtml5, FaJs, FaLinkedin, FaMedium, FaReact } from "react-icons/fa6";
 import { SiNestjs, SiGit, SiTypescript } from 'react-icons/si';
 
-import shortener from '../images/shortener.jpg';
-import carReg from '../images/car_reg.jpg';
-import luxuryMart from '../images/luxurymart.jpg';
-import shopWise from '../images/shopwise.jpg';
-import dashboard from '../images/dashboard.jpg';
-import programmingTutor from '../images/programming-tutor.jpg';
-import scorer from '../images/scorer.jpg';
+import shortener from '../src/images/shortener.jpg';
+import carReg from '../src/images/car_reg.jpg';
+import luxuryMart from '../src/images/luxurymart.jpg';
+import shopWise from '../src/images/shopwise.jpg';
+import dashboard from '../src/images/dashboard.jpg';
+import programmingTutor from '../src/images/programming-tutor.jpg';
+import scorer from '../src/images/scorer.jpg';
 
 export const links = [
   { id: nanoid(), text: 'home' },
