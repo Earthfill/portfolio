@@ -2,6 +2,14 @@ import { nanoid } from "nanoid";
 import { FaGithub, FaHtml5, FaJs, FaLinkedin, FaMedium, FaReact } from "react-icons/fa6";
 import { SiNestjs, SiGit, SiTypescript } from 'react-icons/si';
 
+import shortener from '../images/shortener.jpg';
+import carReg from '../images/car_reg.jpg';
+import luxuryMart from '../images/luxurymart.jpg';
+import shopWise from '../images/shopwise.jpg';
+import dashboard from '../images/dashboard.jpg';
+import programmingTutor from '../images/programming-tutor.jpg';
+import scorer from '../images/scorer.jpg';
+
 export const links = [
   { id: nanoid(), text: 'home' },
   { id: nanoid(), text: 'skills' },
@@ -51,31 +59,31 @@ export const skills = [
 export const images = [
   {
     id: nanoid(),
-    img: '../src/images/shortener.jpg'
+    img: shortener
   },
   {
     id: nanoid(),
-    img: '../src/images/car_reg.jpg'
+    img: carReg
   },
   {
     id: nanoid(),
-    img: '../src/images/luxurymart.jpg'
+    img: luxuryMart
   },
   {
     id: nanoid(),
-    img: '../src/images/shopwise.jpg'
+    img: shopWise
   },
   {
     id: nanoid(),
-    img: '../src/images/dashboard.jpg'
+    img: dashboard
   },
   {
     id: nanoid(),
-    img: '../src/images/programming-tutor.jpg'
+    img: programmingTutor
   },
   {
     id: nanoid(),
-    img: '../src/images/scorer.jpg'
+    img: scorer
   },
 ]
 
