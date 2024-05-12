@@ -9,3 +9,4 @@ export { default as ToggleMode } from './ToggleMode';
 export { default as Services } from './Services';
 export { default as ServicesCard } from './ServicesCard';
 export { default as Footer } from './Footer';
+export { default as ProjectsCard } from './ProjectsCard';

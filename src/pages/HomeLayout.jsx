@@ -3,13 +3,15 @@ import { Footer, Navbar } from "../components"
 
 const HomeLayout = () => {
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
       <Navbar />
-      <section>
+      <section className="flex-1">
         <Outlet />
       </section>
-      <Footer />
-    </>
+      <div className="">
+        <Footer />
+      </div>
+    </div>
   )
 }
 

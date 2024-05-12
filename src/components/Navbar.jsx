@@ -26,7 +26,7 @@ const Navbar = () => {
   }, [isOpen]);
 
   return (
-    <nav className="bg-white w-full">
+    <nav className={`${darkMode ? 'bg-black text-gray-100' : 'bg-white'} w-full`}>
       <div className="align-element py-4">
         {/* Desktop */}
         <div className="hidden md:flex md:items-center md:justify-between">

@@ -12,6 +12,7 @@ const AnimateProject = () => {
     speed: 5000,
     autoplaySpeed: 100,
     cssEase: "linear",
+    arrows: false,
     responsive: [
       {
         breakpoint: 1024,

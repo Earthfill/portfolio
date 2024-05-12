@@ -7,7 +7,7 @@ const ToggleMode = () => {
 
   return (
     <div onClick={toggleDarkMode} className="cursor-pointer">
-      {darkMode ? <FaMoon className="text-blue-500" /> : <FaSun className="text-yellow-500" />}
+      {darkMode ?  <FaSun className="text-yellow-500" /> : <FaMoon className="text-blue-500" /> }
     </div>
   )
 }

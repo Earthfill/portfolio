@@ -1,6 +1,8 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom"
 import { Landing } from "./components"
 import { Error, HomeLayout, Projects, Contact, Skills } from "./pages"
+import { ThemeContext } from "./contexts/ToggleMode";
+import { useContext } from "react";
 
 const router = createBrowserRouter([
   {
@@ -29,10 +31,12 @@ const router = createBrowserRouter([
 ])
 
 function App() {
+  const { darkMode } = useContext(ThemeContext);
+
   return (
-    <>
+    <div className={`${darkMode ? 'bg-gray-950' : 'bg-slate-50'}`}>
       <RouterProvider router={router} />
-    </>
+    </div>
   )
 }
 

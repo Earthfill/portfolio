@@ -9,7 +9,7 @@ const ServicesCard = ({ title, text }) => {
           <h4 className="font-bold">
             {title}
           </h4>
-          <p className="mt-2 text-slate-500">
+          <p className="mt-2">
             {text}
           </p>
         </div>

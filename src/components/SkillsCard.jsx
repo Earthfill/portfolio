@@ -5,7 +5,7 @@ const SkillsCard = ({ icon, title, text }) => {
       <h4 className="mt-6 font-bold">
         {title}
       </h4>
-      <p className="mt-2 text-slate-500">
+      <p className='mt-2'>
         {text}
       </p>
     </article>
