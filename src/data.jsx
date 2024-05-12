@@ -63,23 +63,19 @@ export const images = [
   },
   {
     id: nanoid(),
-    img: '../src/images/shortener.jpg'
+    img: '../src/images/shopwise.jpg'
   },
   {
     id: nanoid(),
-    img: '../src/images/shortener.jpg'
+    img: '../src/images/dashboard.jpg'
   },
   {
     id: nanoid(),
-    img: '../src/images/shortener.jpg'
+    img: '../src/images/programming-tutor.jpg'
   },
   {
     id: nanoid(),
-    img: '../src/images/shortener.jpg'
-  },
-  {
-    id: nanoid(),
-    img: '../src/images/shortener.jpg'
+    img: '../src/images/scorer.jpg'
   },
 ]
 
