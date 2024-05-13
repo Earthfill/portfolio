@@ -56,7 +56,7 @@ const Navbar = () => {
               {isOpen ? <IoClose /> : <VscThreeBars />}
             </div>
             {isOpen && (
-              <div className="fixed z-50 flex flex-col items-center font-semibold rounded-lg text-slate-100 gap-5 w-full mt-10 left-0 p-10 bg-blue-500">
+              <div className={`fixed z-50 flex flex-col items-center font-semibold rounded-lg ${darkMode ? 'bg-gray-950 text-gray-200' : 'text-slate-100 bg-blue-500'} gap-5 w-full mt-10 left-0 p-10`}>
                 {links.map((link) => {
                   const { id, text } = link;
                   const route = text === 'home' ? '/' : `/${text}`;
