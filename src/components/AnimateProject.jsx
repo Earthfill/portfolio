@@ -6,11 +6,11 @@ import { images } from "../data";
 const AnimateProject = () => {
   var settings = {
     infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToShow: 4,
+    slidesToScroll: 4,
     autoplay: true,
-    speed: 5000,
-    autoplaySpeed: 100,
+    speed: 15000,
+    autoplaySpeed: 50,
     cssEase: "linear",
     arrows: false,
     responsive: [
