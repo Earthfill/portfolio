@@ -1,6 +1,4 @@
-import AnimateProject from "./AnimateProject"
-import Hero from "./Hero"
-import Services from "./Services"
+import { AnimateProject, Hero, Services } from "../components"
 
 const Landing = () => {
   return (

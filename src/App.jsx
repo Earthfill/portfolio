@@ -1,43 +1,45 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom"
-import { Landing } from "./components"
-import { Error, HomeLayout, Projects, Contact, Skills } from "./pages"
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { Error, HomeLayout, Projects, Contact, Skills, Landing } from "./pages";
+import { Suspense, useContext } from "react";
+import { Loading } from "./components";
 import { ThemeContext } from "./contexts/ToggleMode";
-import { useContext } from "react";
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <HomeLayout />,
     errorElement: <Error />,
     children: [
       {
         index: true,
-        element: <Landing />
+        element: <Landing />,
       },
       {
-        path: 'skills',
-        element: <Skills />
+        path: "skills",
+        element: <Skills />,
       },
       {
-        path: 'projects',
-        element: <Projects />
+        path: "projects",
+        element: <Projects />,
       },
       {
-        path: 'contact',
-        element: <Contact />
+        path: "contact",
+        element: <Contact />,
       },
-    ]
-  }
-])
+    ],
+  },
+]);
 
 function App() {
   const { darkMode } = useContext(ThemeContext);
 
   return (
-    <div className={`${darkMode ? 'bg-gray-950' : 'bg-slate-50'}`}>
-      <RouterProvider router={router} />
+    <div className={`${darkMode ? "bg-gray-950" : "bg-slate-50"}`}>
+      <Suspense fallback={<Loading />}>
+        <RouterProvider router={router} />
+      </Suspense>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
